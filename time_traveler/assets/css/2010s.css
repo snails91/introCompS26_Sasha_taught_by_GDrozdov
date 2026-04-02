@@ -1,0 +1,74 @@
+/* Add styles to all elements */
+* {
+	margin: 0; /* remove default margin from all elements */
+	padding: 0; /* remove default padding from all elements */
+	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+}
+
+/* Write your CSS below (feel free to change the styles already here) */
+@font-face {
+	font-family: "FiraCode";
+	src: url("../fonts/FiraCode-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "ArchivoBlack";
+	src: url("../fonts/ArchivoBlack-Regular.ttf");
+}
+@font-face {
+	font-family: "LeagueScript";
+	src: url("../fonts/LeagueScript-Regular.ttf");
+}
+
+body {
+	font-family: "FiraCode";
+	background-color: hsl(310, 100%, 50%);
+}
+
+h1 {
+	font-family:"ArchivoBlack";
+	text-decoration: underline;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+	
+p-frame {
+		padding: 15px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 8px;
+		max-width: 800px;
+		margin: 10 ;
+		
+	}
+	p-box {
+		background-color: rgb(250, 182, 36);
+		text-decoration: none;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	p{
+		border:2px solid black;
+
+	}
+.long{ 
+	grid: all;
+	background-color: greenyellow;
+}
+
+	@media only screen and (max-width: 500px) {
+		p-frame {
+			grid-template-columns: 1fr;
+		}
+		body{
+			font-family: "LeagueScript";
+			font-weight: 900;
+		}
+	}

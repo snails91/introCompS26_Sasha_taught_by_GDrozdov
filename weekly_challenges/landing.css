@@ -1,0 +1,22 @@
+.index_button {
+	background-color:rgba(153, 184, 41, 0.623);;
+	border-radius: 1px;
+	font-size: 14px;
+	padding: 4px;
+	transition-duration: 200ms;
+	position:absolute;
+	top: 20px;
+	left:15px;
+}
+
+.index_button:hover {
+	background-color:rgba(193, 227, 69, 0.922);
+	transition-duration: 200ms;
+
+}
+
+nav{
+ align-content: center;
+ 
+
+}

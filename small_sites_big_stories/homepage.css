@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	background-color: hsla(259, 74%, 44%, 0.607);
+	height: 100dvh; /* more info about dvh here: https://web.dev/blog/viewport-units */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+a {
+	color: black;
+}
+
+.index_button {
+	background-color:rgba(153, 184, 41, 0.623);;
+	border-radius: 1px;
+	font-size: 14px;
+	padding: 4px;
+	transition-duration: 200ms;
+	position:absolute;
+	top: 20px;
+	left:15px;
+}
+
+.index_button:hover {
+	background-color:rgba(193, 227, 69, 0.922);
+	transition-duration: 200ms;
+
+}

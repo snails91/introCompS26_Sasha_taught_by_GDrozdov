@@ -1,0 +1,126 @@
+/* Add styles to all elements */
+* {
+	margin: 0;
+	/* remove default margin from all elements */
+	padding: 0;
+	/* remove default padding from all elements */
+	/*box-sizing: border-box;  fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+
+}
+
+/* Write your CSS below (feel free to change the styles already here) */
+body {
+	padding: 20px;
+	width: 70%;
+	font-family: monospace;
+	background-color: rgb(244, 240, 113);
+	color: rgb(11, 33, 48);
+	line-height: 200%;
+}
+
+
+/*nav*/
+
+nav {
+	align-content: space-evenly;
+	margin: auto;
+}
+
+/* 2000 article*/
+
+.cool-oval {
+	margin: 20px;
+	padding: 10px;
+	background-color: rgb(211, 103, 137);
+	border-radius: 50%;
+	align-content: center;
+	animation-name: cool-animation;
+	animation-duration: 2s;
+	animation-timing-function: easeOutCirc;
+	/* https://easings.net/ */
+	animation-direction: forwards;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	/* alternate, reverse */
+}
+
+h2 {
+	position: sticky;
+	top: 30px;
+	right: 50px;
+	border-style: double;
+}
+
+b1 {
+	font-style: italic;
+	position: sticky;
+	top: 10px;
+}
+
+b2 {
+	background-color: aquamarine;
+	position: sticky;
+	top: 10px;
+}
+
+b3 {
+	position: sticky;
+	bottom: 37px;
+	border-style: dashed;
+	border-color: rgb(11, 33, 48);
+	background-color: rgb(177, 239, 95);
+}
+
+b4 {
+	color: inherit;
+}
+
+b4:hover {
+	font-size: larger;
+}
+
+b5 {
+	font-style: italic;
+	color: rgb(230, 108, 21);
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+
+.responsive-centered {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: rgba(195, 254, 78, 0.607);
+}
+
+.parent-element {
+	background-color: black;
+	color: white;
+}
+
+.child-element {
+	display: none;
+}
+
+.parent-element:hover .child-element {
+	display: block;
+}
+
+@keyframes cool-animation {
+	0% {
+		letter-spacing: 1px;
+		background-color: rgb(241, 43, 152);
+
+	}
+
+	50% {
+
+		letter-spacing: 2px;
+		background-color: rgb(202, 202, 4);
+	}
+
+	100% {
+		letter-spacing: 1px;
+		background-color: rgb(220, 63, 220);
+	}
+}

@@ -1,0 +1,55 @@
+/* Add styles to all elements */
+* {
+	margin: 0; /* remove margin from all elements */
+	padding: 0; /* remove padding from all elements */
+	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+}
+
+a:link {
+text-decoration: none;
+}
+
+/* Write your CSS below (feel free to change the styles already here) */
+body {
+	font-family: sans-serif;
+	background-color: rgb(210, 111, 134);
+}
+header {
+	padding: 20px;
+	margin: 40px;
+	background-color: rgb(204, 236, 45);
+	border: 5px  rgb(4, 65, 151);
+	border-style: double;
+	border-radius: 50px;
+}
+nav {
+	padding: 20px;
+	margin: 40px;
+	background-color: rgb(210, 111, 134);
+	border: 5px solid rgb(190, 51, 76);
+	font-style: oblique;
+	color: rgb(204, 236, 45) ;
+	text-align: center;
+}
+ul {
+	margin: 20px;
+	list-style-type: none;
+	
+}
+
+.index_button {
+	background-color:rgba(153, 184, 41, 0.623);;
+	border-radius: 1px;
+	font-size: 14px;
+	padding: 4px;
+	transition-duration: 200ms;
+	position:absolute;
+	top: 20px;
+	left:15px;
+}
+
+.index_button:hover {
+	background-color:rgba(193, 227, 69, 0.922);
+	transition-duration: 200ms;
+
+}
