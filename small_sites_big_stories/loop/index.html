@@ -10,11 +10,13 @@
 </head>
 
 <body>
-	the least efficent law mower
+	the least efficent law mower pattern
 	<a href="../index.html">go back</a>
 
-	<div class="container">
-	</div>
+	<div class="container"></div>
+	<div class="container"></div>
+	<div class="container"></div>
+	<div class="container"></div>
 
 	<script>
 		let container = document.querySelector('.container');
@@ -22,12 +24,12 @@
 		let Size = 20;
 		let Top = 200;
 		let Left = 200;
-	
+
 
 
 		function maze() {
 			let randomTurn = Math.random() * 4;
-			console.log(randomTurn);
+			//console.log(randomTurn);
 
 			if (randomTurn >= 0 && randomTurn < 1) {
 				Top += Size;
@@ -43,15 +45,25 @@
 			}
 
 			let newDiv = `<div style=" position: absolute; top:${Top}px; left:${Left}px; width: ${Size}px; height: ${Size}px;"></div>`;
+
 			container.innerHTML += newDiv;
+
 		}
 
-		
+function grassVar() {
+			let allChildren = document.querySelectorAll('.container div');
+
+			for (let i=0; i<allChildren.length; i++) {
+				let child = allChildren[i];
+				let randomRed = Math.random()*30+180;
+				child.style.backgroundColor = "rgb("+randomRed+", 201, 109)";
+			}
+		}
+
+		setInterval(grassVar, 500);
+		setInterval(maze, 200);
 
 
-			setInterval(maze, 200);
-
-	
 	</script>
 </body>
 
