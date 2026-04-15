@@ -1,0 +1,103 @@
+		/* GLOBAL STYLES */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+        @font-face {
+        font-family: 'JotiOne';
+        src: url('JotiOne-Regular.ttf');
+}
+		body {
+            background-color: rgb(86, 25, 62);
+            font-family:'JotiOne';
+		}
+
+		/* HEADER */
+		.header {
+            color: #46bfb5;
+            margin:20px;
+            padding-top: 10px;
+            padding-bottom:10px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #214643;
+		}
+		.header-title {
+            text-decoration: dotted;
+            letter-spacing: 1px;
+			
+		}
+		.header-credit {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+
+		}
+
+		/* LINKS */
+		.links {
+			padding: 40px;
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		gap: 20px;
+		max-width: 800px;
+		margin: 0 auto;
+		}
+
+		.links-card {
+            background-color: inherit;
+		color: rgb(98, 150, 85);
+		text-decoration: none;
+        border: 5px rgb(234, 215, 45) dashed;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		font-family: sans-serif;
+	
+		}
+		.links-card h2 {
+            font-family: JotiOne;
+            justify-content: center;
+	
+		}
+		.links-card p {
+            margin-left:auto;
+
+		}
+		.links-card:hover {
+            margin-left:20px;
+            margin-right:20px;
+            border:5px solid rgb(234, 215, 45);
+            background-color: rgba(165, 203, 255, 0.527);
+            box-shadow: 3px;
+            box-shadow:4px;
+	
+		}
+		.links-card:active {
+            margin-left:28px;
+            margin-right:28px;
+            box-shadow: inset;
+            border-style: hidden;
+            font-weight: 100;
+        
+            background-color: rgb(175, 199, 17);
+
+	
+		}
+
+
+        @media only screen and (max-width: 800px) {
+		.links {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		.links {
+			grid-template-columns: 1fr;
+		}
+	}
+

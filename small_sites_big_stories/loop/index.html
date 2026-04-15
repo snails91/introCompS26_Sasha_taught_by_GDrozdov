@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Small Sites; Big Stories | Loop</title>
 	<link rel="stylesheet" href="loop.css">
-</head>
-<body>
-	<h1>LOOP!</h1>
 
-	<script src="loop.js"></script>
+
+</head>
+
+<body>
+	<a href="../index.html">go back</a>
+
+	<div class="container">
+	</div>
+
+	<script>
+		let container = document.querySelector('.container');
+
+		let Size = 20;
+		let Top = 200;
+		let Left = 200;
+	
+
+
+		function maze() {
+			let randomTurn = Math.random() * 4;
+			console.log(randomTurn);
+
+			if (randomTurn >= 0 && randomTurn < 1) {
+				Top += Size;
+			}
+			if (randomTurn >= 1 && randomTurn < 2) {
+				Left += Size;
+			}
+			if (randomTurn >= 2 && randomTurn < 3) {
+				Top -= Size;
+			}
+			if (randomTurn >= 3 && randomTurn < 4) {
+				Left -= Size;
+			}
+
+			let newDiv = `<div style=" position: absolute; top:${Top}px; left:${Left}px; width: ${Size}px; height: ${Size}px;"></div>`;
+			container.innerHTML += newDiv;
+		}
+
+		
+
+
+			setInterval(maze, 200);
+
+	
+	</script>
 </body>
+
 </html>
