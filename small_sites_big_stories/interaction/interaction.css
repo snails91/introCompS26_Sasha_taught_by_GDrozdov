@@ -9,17 +9,33 @@ body {
 	height: 100dvh; /* more info about dvh here: https://web.dev/blog/viewport-units */
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items: top;
+	justify-content: top;
 	
 	margin: 0;
 	height: 100vh;
 	
 }
+.flower {
+margin:40px;
+  display: flex;
+  align-items:normal;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  background-color:yellowgreen;
+}
 
-flower {
-  width: 200px; /* adjust to control the size */
-  aspect-ratio: 1;
-  --g:/25.486% 25.486% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
-  mask: 100% 50% var(--g),88.302% 82.139% var(--g),58.682% 99.24% var(--g),25% 93.301% var(--g),3.015% 67.101% var(--g),3.015% 32.899% var(--g),25% 6.699% var(--g),58.682% 0.76% var(--g),88.302% 17.861% var(--g),radial-gradient(100% 100%,#000 35.01%,#0000 calc(35.01% + 1px));
+.flower div {
+  background-color: #f1f1f1;
+  margin: 7px;
+  padding: 20px;
+  font-size: 30px;
+  transition: background-color .3s;
+  transition-delay: height 0s, background-color 0.8s;;
+  flex-grow: 3;
+}
+
+.flower div:hover {
+	flex-grow:1;
+	background-color:darkolivegreen;
 }
